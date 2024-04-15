@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>طلب فلاشة</title>
+</head>
+<body>
+
+<h2>طلب فلاشة</h2>
+<form action="process_form.php" method="post">
+    <label for="flash_size">اختر حجم الفلاشة:</label>
+    <select id="flash_size" name="flash_size">
+        <option value="16">16 جيجا (120 جنيه)</option>
+        <option value="32">32 جيجا (240 جنيه)</option>
+        <option value="64">64 جيجا (325 جنيه)</option>
+    </select>
+    <br><br>
+    <label for="name">الاسم:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="phone">رقم الهاتف:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <br><br>
+    <label for="whatsapp">رقم الواتساب:</label>
+    <input type="tel" id="whatsapp" name="whatsapp" required>
+    <br><br>
+    <label for="city">المحافظة:</label>
+    <select id="city" name="city">
+        <option value="35">القاهرة (35 جنيه)</option>
+        <option value="50">الإسكندرية (50 جنيه)</option>
+        <!-- اكمل الخيارات هنا -->
+    </select>
+    <br><br>
+    <label for="address">العنوان:</label>
+    <textarea id="address" name="address" required></textarea>
+    <br><br>
+    <label for="notes">ملحوظات:</label>
+    <textarea id="notes" name="notes"></textarea>
+    <br><br>
+    <input type="submit" value="شراء الآن">
+</form>
+
+</body>
+</html>
